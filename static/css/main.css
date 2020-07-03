@@ -1,0 +1,67 @@
+.pagewrapper {
+    display:flex; flex-direction:column; justify-content:center;
+    align-self: center;
+    text-align: center;
+    min-height:100vh;
+    background-image: url(/static/img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: -50px;
+    width: 100%
+  }
+
+  .main h1,p{
+    color: white;
+    font-weight: bold;
+  }
+  .main input{
+    width: 40%;
+    padding: 5px 0;
+    resize: none;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    border: none;
+    border-bottom: 1px solid #777;
+    outline: none; 
+}
+  .main span{
+    position: absolute;
+    left: 15px;
+    padding: 5px 0;
+    font-size: 15px;
+    font-weight: 300;
+    color: #333;
+    transition: 0.5s;
+    pointer-events: none;
+}
+  .main input:focus ~ span,
+  .main input:valid ~ span{
+    transform: translateY(-20px);
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #ff568c;
+}
+.main input[type="submit"]{
+  position: relative;
+  cursor: pointer;
+  background: #0f3959;
+  color: #fff;
+  border: none;
+  max-width: 150px;
+  padding: 12px;
+  transition: 1s;
+}
+.main input[type="submit"]:hover{
+  background: #01fc3f;
+  transition: 1s;
+}
+.result{
+  width: fit-content;
+  text-align: center;
+  align-self: center;
+  text-align: center;
+}
